@@ -12,7 +12,7 @@ APPNAME   = "MakeDP"
 st.set_page_config(page_icon="favicon.png", page_title=f"Wish | {APPNAME}")
 # your loved ones --> info
 
-# st.image("will-be-at-carol-banner.png", use_column_width=True)
+st.image("wish-banner.png", use_container_width=True)
 
 
 def image_side_text(ist_holder, image_url="favicon.png", image_width=44, markdown=f"<h1 style=\"margin-top: -0.5rem;\">{APPNAME}</h1>", columns=[4, 20]):
@@ -54,7 +54,7 @@ with st.container(border=True):
         # design_img = design_img.resize((design_width, design_height))
 
         # Choose placement coordinates
-        x_offset = st.slider("Horizontal Image Position", 0, 2000, 0)
+        x_offset = st.slider("Horizontal Image Position", -1000, 2000, 0)
         y_offset = st.slider("Vertical Image Position", -400, 2000, 257)
         image_size = st.slider("Image Size", 1000, 3000, 1500)
 
