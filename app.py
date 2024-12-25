@@ -54,7 +54,7 @@ with st.container(border=True):
         # design_img = design_img.resize((design_width, design_height))
 
         # Choose placement coordinates
-        x_offset = st.slider("Horizontal Image Position", -1000, 2000, 0)
+        x_offset = st.slider("Horizontal Image Position", -1500, 2000, 0)
         y_offset = st.slider("Vertical Image Position", -400, 2000, 257)
         image_size = st.slider("Image Size", 1000, 3000, 1500)
 
